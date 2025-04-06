@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     });
 
     res.status(200).json(user);
-  } catch (e) {
+  } catch (_) {
     res.status(500).json({ error: "Usuario ya registrado o error interno" });
   }
 }
